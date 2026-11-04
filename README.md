@@ -1,2 +1,3 @@
-# h3-selected-showcase-20261104
-H3 user-selected original videos and basic image gallery, 2026-11-04
+# H3 · 已选30组视频
+
+原图、原片及基本信息。页面标记保存在当前浏览器，可导出。

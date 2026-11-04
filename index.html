@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>30组效果 · 再筛选</title>
+<style>
+:root{color-scheme:dark;--bg:#0e1219;--panel:#171e29;--border:#303b4d;--text:#edf2f8;--muted:#9caabe;--accent:#8cb9ff;--mark:#ffce72}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,"Microsoft Yahei",sans-serif}
+button,select{font:inherit;color:inherit;background:#202b3b;border:1px solid var(--border);border-radius:8px;padding:9px 15px;cursor:pointer}
+button:hover,select:hover{border-color:var(--accent)}button:disabled{opacity:.35;cursor:default}button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+header{display:flex;align-items:center;gap:12px;padding:15px 22px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+header strong{font-size:20px;margin-right:10px}.grow{flex:1}#filterMarked[aria-pressed=true],#mark[aria-pressed=true]{border-color:var(--mark);background:#493a21;color:#ffdd9c}
+.layout{display:grid;grid-template-columns:245px minmax(0,1fr);height:calc(100vh - 83px)}
+aside{border-right:1px solid var(--border);overflow:auto;padding:12px}
+.pick{display:flex;width:100%;align-items:center;gap:10px;text-align:left;padding:7px;margin:0 0 9px;background:var(--panel);border-color:transparent}
+.pick.active{border-color:var(--accent);background:#253750}.pick img{width:82px;height:55px;object-fit:cover;border-radius:5px;background:#000}.pick span{font-size:14px;line-height:1.4}
+.star{color:var(--mark)}main{min-width:0;padding:18px 24px;overflow:auto}.heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:9px}h1{font-size:23px;line-height:1.35;margin:0;flex:1}
+#meta,#position,#saveState{color:var(--muted);font-size:14px}#saveState{min-height:21px}
+.controls{display:flex;align-items:center;gap:8px;margin:14px 0;flex-wrap:wrap}.tabs button.active{background:#354d70;border-color:#7ba4de}
+.stage{background:#07090e;border:1px solid var(--border);border-radius:10px;min-height:320px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+video,#source{display:block;width:100%;max-height:calc(100vh - 290px);object-fit:contain;background:#07090e}#source[hidden],video[hidden]{display:none}
+.empty{padding:70px 20px;text-align:center;color:var(--muted)}[hidden]{display:none!important}
+@media(min-width:1900px){main{padding-left:38px;padding-right:38px}.stage{max-width:1560px;margin:auto}}
+@media(max-width:850px){.layout{grid-template-columns:1fr;height:auto}aside{display:flex;overflow:auto;border-right:0;border-bottom:1px solid var(--border);height:100px}.pick{min-width:190px;width:190px;margin:0 8px 0 0}.pick img{width:65px}main{padding:15px}header{padding:12px}.grow{display:none}video,#source{max-height:68vh}.stage{min-height:220px}}
+</style>
+</head>
+<body>
+<header>
+<strong>30组效果</strong>
+<select id="category" aria-label="类别"><option value="all">全部30组</option><option value="2K">2K · 2组</option><option value="人物">人物 · 7组</option><option value="室内动态">室内动态 · 21组</option></select>
+<button id="filterMarked" aria-pressed="false">只看已标记 <span id="markedCount">0</span></button>
+<span class="grow"></span><button id="export">导出标记</button>
+</header>
+<div class="layout">
+<aside id="list" aria-label="视频列表"></aside>
+<main>
+<div id="viewer">
+<div class="heading"><h1 id="title"></h1><button id="mark" aria-pressed="false">☆ 标记</button></div>
+<div id="meta"></div>
+<div class="controls">
+<button id="prev" title="上一组">← 上一组</button><span id="position"></span><button id="next" title="下一组">下一组 →</button>
+<span class="grow"></span><span class="tabs"><button id="videoTab" class="active">视频</button> <button id="sourceTab">原图</button></span>
+<button id="fullscreen">放大</button>
+</div>
+<div class="stage" id="stage"><video id="video" controls playsinline preload="metadata" loop></video><img id="source" alt="原图" hidden></div>
+<div id="saveState" aria-live="polite"></div>
+</div>
+<div id="empty" class="empty" hidden>当前筛选下暂无内容</div>
+</main>
+</div>
+<script id="items-data" type="application/json">[{"id": "01", "title": "最初2K · 窗边厨房", "category": "2K", "people": false, "is_2k": true, "width": 2560, "height": 1440, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/01/source.jpg", "video": "media/01/original.mp4", "poster": "media/01/poster.jpg"}, {"id": "02", "title": "2K · 原木客厅", "category": "2K", "people": false, "is_2k": true, "width": 2560, "height": 1440, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/02/source.jpg", "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/original-video/02_original.mp4", "poster": "media/02/poster.jpg"}, {"id": "05", "title": "人物 · 沙发看窗外", "category": "人物", "people": true, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/05/source.jpg", "video": "media/05/original.mp4", "poster": "media/05/poster.jpg"}, {"id": "06", "title": "人物 · 古典公寓 · 主卧", "category": "人物", "people": true, "is_2k": false, "width": 864, "height": 640, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/06/source.jpg", "video": "media/06/original.mp4", "poster": "media/06/poster.jpg"}, {"id": "07", "title": "人物 · 法国公寓改造 · 客厅看沙发", "category": "人物", "people": true, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/07/source.jpg", "video": "media/07/original.mp4", "poster": "media/07/poster.jpg"}, {"id": "09", "title": "人物 · 暖色现代公寓 · 餐区看客厅", "category": "人物", "people": true, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/09/source.jpg", "video": "media/09/original.mp4", "poster": "media/09/poster.jpg"}, {"id": "13", "title": "动态 · 楼梯客厅纱帘", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/13/source.jpg", "video": "media/13/original.mp4", "poster": "media/13/poster.jpg"}, {"id": "16", "title": "动态 · 窗边日照变化", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/16/source.jpg", "video": "media/16/original.mp4", "poster": "media/16/poster.jpg"}, {"id": "17", "title": "动态 · 窗边叶片轻摆", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/17/source.jpg", "video": "media/17/original.mp4", "poster": "media/17/poster.jpg"}, {"id": "26", "title": "空间 · 木饰面客餐厨一体", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/26/source.jpg", "video": "media/26/original.mp4", "poster": "media/26/poster.jpg"}, {"id": "29", "title": "空间 · 浅木色厨房侧向通道", "category": "室内动态", "people": false, "is_2k": false, "width": 672, "height": 832, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/29/source.jpg", "video": "media/29/original.mp4", "poster": "media/29/poster.jpg"}, {"id": "C05", "title": "C05 · 卫浴与花饰镜子", "category": "人物", "people": true, "is_2k": false, "width": 1024, "height": 704, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/C05/source.jpg", "video": "media/C05/original.mp4", "poster": "media/C05/poster.jpg"}, {"id": "T01", "title": "配对60组·01 · 客餐厅", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 672, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T01/source.jpg", "video": "media/T01/original.mp4", "poster": "media/T01/poster.jpg"}, {"id": "T09", "title": "配对60组·09 · 客餐厅", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 416, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T09/source.jpg", "video": "media/T09/original.mp4", "poster": "media/T09/poster.jpg"}, {"id": "T12", "title": "配对60组·12 · 客餐厅", "category": "室内动态", "people": false, "is_2k": false, "width": 768, "height": 1024, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T12/source.jpg", "video": "media/T12/original.mp4", "poster": "media/T12/poster.jpg"}, {"id": "T28", "title": "配对60组·28 · 客餐厅", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T28/source.jpg", "video": "media/T28/original.mp4", "poster": "media/T28/poster.jpg"}, {"id": "T31", "title": "配对60组·31 · 卧室", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 800, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T31/source.jpg", "video": "media/T31/original.mp4", "poster": "media/T31/poster.jpg"}, {"id": "T33", "title": "配对60组·33 · 卧室", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 512, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T33/source.jpg", "video": "media/T33/original.mp4", "poster": "media/T33/poster.jpg"}, {"id": "T38", "title": "配对60组·38 · 卧室", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 672, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T38/source.jpg", "video": "media/T38/original.mp4", "poster": "media/T38/poster.jpg"}, {"id": "T49", "title": "配对60组·49 · 书房茶室", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 512, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/T49/source.jpg", "video": "media/T49/original.mp4", "poster": "media/T49/poster.jpg"}, {"id": "A_02_E", "title": "A_02_E · 古典公寓 · 客厅", "category": "室内动态", "people": false, "is_2k": false, "width": 768, "height": 768, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_02_E/source.jpg", "video": "media/A_02_E/original.mp4", "poster": "media/A_02_E/poster.jpg"}, {"id": "A_03_E", "title": "A_03_E · 古典公寓 · 次卧", "category": "人物", "people": true, "is_2k": false, "width": 640, "height": 864, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_03_E/source.jpg", "video": "media/A_03_E/original.mp4", "poster": "media/A_03_E/poster.jpg"}, {"id": "A_04_E", "title": "A_04_E · 古典公寓 · 餐厨区", "category": "室内动态", "people": false, "is_2k": false, "width": 864, "height": 640, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_04_E/source.jpg", "video": "media/A_04_E/original.mp4", "poster": "media/A_04_E/poster.jpg"}, {"id": "A_14_B", "title": "A_14_B · 深色精装公寓 · 客餐厅", "category": "室内动态", "people": false, "is_2k": false, "width": 896, "height": 640, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_14_B/source.jpg", "video": "media/A_14_B/original.mp4", "poster": "media/A_14_B/poster.jpg"}, {"id": "A_15_B", "title": "A_15_B · 深色精装公寓 · 卫浴正向", "category": "人物", "people": true, "is_2k": false, "width": 576, "height": 928, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_15_B/source.jpg", "video": "media/A_15_B/original.mp4", "poster": "media/A_15_B/poster.jpg"}, {"id": "A_22_C", "title": "A_22_C · 法国公寓改造 · 主卧斜角", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_22_C/source.jpg", "video": "media/A_22_C/original.mp4", "poster": "media/A_22_C/poster.jpg"}, {"id": "A_24_C", "title": "A_24_C · 法国公寓改造 · 书房客卧", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/A_24_C/source.jpg", "video": "media/A_24_C/original.mp4", "poster": "media/A_24_C/poster.jpg"}, {"id": "B_07_living", "title": "B_07_living · 深色石墙会客厅", "category": "室内动态", "people": false, "is_2k": false, "width": 864, "height": 640, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/B_07_living/source.jpg", "video": "media/B_07_living/original.mp4", "poster": "media/B_07_living/poster.jpg"}, {"id": "B_26_living", "title": "B_26_living · 俯视挑高会客区", "category": "室内动态", "people": false, "is_2k": false, "width": 1024, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/B_26_living/source.jpg", "video": "media/B_26_living/original.mp4", "poster": "media/B_26_living/poster.jpg"}, {"id": "B_27_kitchen", "title": "B_27_kitchen · 木质岛台与壁炉厨房", "category": "室内动态", "people": false, "is_2k": false, "width": 928, "height": 576, "fps": 24.0, "frames": 124, "duration": 5.166666666666667, "source": "media/B_27_kitchen/source.jpg", "video": "media/B_27_kitchen/original.mp4", "poster": "media/B_27_kitchen/poster.jpg"}]</script>
+<script>
+'use strict';
+const ITEMS=JSON.parse(document.getElementById('items-data').textContent);
+const KEY='h3-public-selected-marks-20261104';
+const ids=new Set(ITEMS.map(x=>x.id));
+const dom=Object.fromEntries(['category','filterMarked','markedCount','list','viewer','empty','title','mark','meta','prev','next','position','videoTab','sourceTab','fullscreen','video','source','saveState','stage','export'].map(k=>[k,document.getElementById(k)]));
+let selected=new Set(),current=ITEMS.find(x=>x.id===location.hash.slice(1))?.id||ITEMS[0].id,onlyMarked=false,view='video',serverReady=false,revision=0;
+try{selected=new Set(JSON.parse(localStorage.getItem(KEY)||'[]').filter(x=>ids.has(x)));}catch(e){}
+function visible(){return ITEMS.filter(x=>(dom.category.value==='all'||x.category===dom.category.value)&&(!onlyMarked||selected.has(x.id)));}
+function keepLocal(){try{localStorage.setItem(KEY,JSON.stringify([...selected].sort()));}catch(e){}}
+function render(){
+ const rows=visible();
+ if(!rows.some(x=>x.id===current))current=rows[0]?.id||null;
+ dom.list.replaceChildren();
+ rows.forEach(item=>{
+   const button=document.createElement('button');button.className='pick'+(item.id===current?' active':'');button.dataset.id=item.id;
+   const image=document.createElement('img');image.src=item.poster;image.loading='lazy';image.alt='';
+   const text=document.createElement('span');text.textContent=item.id+' '+item.title;
+   if(selected.has(item.id)){const star=document.createElement('b');star.className='star';star.textContent=' ★';text.append(star);}
+   button.append(image,text);button.onclick=()=>show(item.id);dom.list.append(button);
+ });
+ dom.markedCount.textContent=selected.size;dom.filterMarked.setAttribute('aria-pressed',String(onlyMarked));
+ dom.viewer.hidden=!current;dom.empty.hidden=!!current;
+ if(!current){dom.video.pause();return;}
+ const item=ITEMS.find(x=>x.id===current),at=rows.findIndex(x=>x.id===current);
+ dom.title.textContent=item.id+' · '+item.title;
+ dom.meta.textContent=`${item.width}×${item.height} · ${item.duration.toFixed(2)}秒 · ${item.category}`;
+ dom.position.textContent=(at+1)+' / '+rows.length;
+ dom.prev.disabled=at<=0;dom.next.disabled=at>=rows.length-1;
+ const marked=selected.has(item.id);dom.mark.setAttribute('aria-pressed',String(marked));dom.mark.textContent=marked?'✓ 已标记':'☆ 标记';
+ if(dom.video.dataset.id!==item.id){
+   dom.video.pause();dom.video.dataset.id=item.id;dom.video.src=item.video;dom.video.poster=item.poster;dom.source.src=item.source;dom.video.load();
+ }
+ setView(view);
+ if(location.hash!=='#'+item.id)history.replaceState(null,'','#'+item.id);
+}
+function show(id){current=id;dom.saveState.textContent='';render();document.querySelector('.pick.active')?.scrollIntoView({block:'nearest',inline:'nearest'});}
+function setView(value){view=value;dom.video.hidden=value!=='video';dom.source.hidden=value!=='source';if(value!=='video')dom.video.pause();dom.videoTab.classList.toggle('active',value==='video');dom.sourceTab.classList.toggle('active',value==='source');}
+function step(amount){const rows=visible(),index=rows.findIndex(x=>x.id===current),target=rows[index+amount];if(target)show(target.id);}
+async function toggleMark(){
+ if(!current)return;
+ const id=current,wanted=!selected.has(id);wanted?selected.add(id):selected.delete(id);keepLocal();render();
+ dom.saveState.textContent='已保存到本浏览器';
+ if(serverReady){
+   try{
+     const response=await fetch('api/marks',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,selected:wanted})});
+     if(!response.ok)throw Error(response.status);
+     const data=await response.json();selected=new Set(data.ids.filter(x=>ids.has(x)));revision=data.revision;keepLocal();render();
+     dom.saveState.textContent='已保存到本浏览器';
+   }catch(error){dom.saveState.textContent='已保存在本浏览器，可导出标记';}
+ }
+}
+dom.mark.onclick=toggleMark;dom.prev.onclick=()=>step(-1);dom.next.onclick=()=>step(1);
+dom.category.onchange=render;
+dom.filterMarked.onclick=()=>{onlyMarked=!onlyMarked;render();};
+dom.videoTab.onclick=()=>setView('video');dom.sourceTab.onclick=()=>setView('source');
+dom.fullscreen.onclick=()=>{const element=view==='video'?dom.video:dom.source;if(element.requestFullscreen)element.requestFullscreen();};
+dom.export.onclick=()=>{
+ const rows=ITEMS.filter(x=>selected.has(x.id));
+ const data={board:'H3较好效果30组_20261104',ids:rows.map(x=>x.id),items:rows,revision};
+ const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
+ const link=document.createElement('a');link.href=url;link.download='H3本轮标记.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+document.addEventListener('keydown',event=>{
+ if(['INPUT','SELECT','TEXTAREA','VIDEO'].includes(event.target.tagName))return;
+ if(event.key==='ArrowRight'){event.preventDefault();step(1);}
+ if(event.key==='ArrowLeft'){event.preventDefault();step(-1);}
+ if(event.key.toLowerCase()==='m'){event.preventDefault();toggleMark();}
+});
+window.addEventListener('hashchange',()=>{if(ids.has(location.hash.slice(1)))show(location.hash.slice(1));});
+render();
+if(false /* Static public site: browser-local marks only */){
+ fetch('api/marks',{cache:'no-store'}).then(response=>{if(!response.ok)throw Error(response.status);return response.json();}).then(data=>{
+   selected=new Set(data.ids.filter(x=>ids.has(x)));revision=data.revision;serverReady=true;keepLocal();render();
+ }).catch(()=>{});
+}
+</script>
+</body>
+</html>
