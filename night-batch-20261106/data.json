@@ -1,0 +1,505 @@
+{
+  "counts": {
+    "one_k": 25,
+    "two_k": 9
+  },
+  "items": [
+    {
+      "id": "I01",
+      "number": "01",
+      "space": "客餐厅",
+      "source": "media/I01/source.jpg",
+      "poster": "media/I01/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I01",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 416,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I01_original.mp4"
+        },
+        "2K": {
+          "id": "K01",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1056,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K01_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I02",
+      "number": "02",
+      "space": "卧室",
+      "source": "media/I02/source.jpg",
+      "poster": "media/I02/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I02",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 416,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I02_original.mp4"
+        },
+        "2K": {
+          "id": "K02",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1056,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K02_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I03",
+      "number": "03",
+      "space": "厨房",
+      "source": "media/I03/source.jpg",
+      "poster": "media/I03/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I03",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 512,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I03_original.mp4"
+        },
+        "2K": {
+          "id": "K03",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1312,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K03_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I04",
+      "number": "04",
+      "space": "书房茶室",
+      "source": "media/I04/source.jpg",
+      "poster": "media/I04/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I04",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 416,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I04_original.mp4"
+        },
+        "2K": {
+          "id": "K04",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1056,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K04_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I05",
+      "number": "05",
+      "space": "卫生间",
+      "source": "media/I05/source.jpg",
+      "poster": "media/I05/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I05",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 512,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I05_original.mp4"
+        },
+        "2K": {
+          "id": "K05",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1312,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K05_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I06",
+      "number": "06",
+      "space": "客餐厅",
+      "source": "media/I06/source.jpg",
+      "poster": "media/I06/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I06",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 416,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I06_original.mp4"
+        },
+        "2K": {
+          "id": "K06",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1056,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K06_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I07",
+      "number": "07",
+      "space": "卧室",
+      "source": "media/I07/source.jpg",
+      "poster": "media/I07/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I07",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 480,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I07_original.mp4"
+        },
+        "2K": {
+          "id": "K07",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1216,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K07_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I09",
+      "number": "09",
+      "space": "书房茶室",
+      "source": "media/I09/source.jpg",
+      "poster": "media/I09/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I09",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 480,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I09_original.mp4"
+        },
+        "2K": {
+          "id": "K09",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1216,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K09_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I10",
+      "number": "10",
+      "space": "卫生间",
+      "source": "media/I10/source.jpg",
+      "poster": "media/I10/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I10",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 704,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I10_original.mp4"
+        },
+        "2K": {
+          "id": "K10",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1824,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/K10_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I11",
+      "number": "11",
+      "space": "客餐厅",
+      "source": "media/I11/source.jpg",
+      "poster": "media/I11/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I11",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 480,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I11_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I12",
+      "number": "12",
+      "space": "卧室",
+      "source": "media/I12/source.jpg",
+      "poster": "media/I12/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I12",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I12_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I14",
+      "number": "14",
+      "space": "书房茶室",
+      "source": "media/I14/source.jpg",
+      "poster": "media/I14/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I14",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 736,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I14_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I15",
+      "number": "15",
+      "space": "卫生间",
+      "source": "media/I15/source.jpg",
+      "poster": "media/I15/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I15",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 1024,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I15_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I16",
+      "number": "16",
+      "space": "客餐厅",
+      "source": "media/I16/source.jpg",
+      "poster": "media/I16/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I16",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 1024,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I16_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I17",
+      "number": "17",
+      "space": "卧室",
+      "source": "media/I17/source.jpg",
+      "poster": "media/I17/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I17",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I17_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I20",
+      "number": "20",
+      "space": "卫生间",
+      "source": "media/I20/source.jpg",
+      "poster": "media/I20/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I20",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I20_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I21",
+      "number": "21",
+      "space": "客餐厅",
+      "source": "media/I21/source.jpg",
+      "poster": "media/I21/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I21",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 576,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I21_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I22",
+      "number": "22",
+      "space": "卧室",
+      "source": "media/I22/source.jpg",
+      "poster": "media/I22/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I22",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I22_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I23",
+      "number": "23",
+      "space": "厨房",
+      "source": "media/I23/source.jpg",
+      "poster": "media/I23/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I23",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I23_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I24",
+      "number": "24",
+      "space": "书房茶室",
+      "source": "media/I24/source.jpg",
+      "poster": "media/I24/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I24",
+          "resolution": "1K",
+          "width": 576,
+          "height": 1024,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I24_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I25",
+      "number": "25",
+      "space": "卫生间",
+      "source": "media/I25/source.jpg",
+      "poster": "media/I25/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I25",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I25_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I26",
+      "number": "26",
+      "space": "客餐厅",
+      "source": "media/I26/source.jpg",
+      "poster": "media/I26/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I26",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 480,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I26_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I27",
+      "number": "27",
+      "space": "卧室",
+      "source": "media/I27/source.jpg",
+      "poster": "media/I27/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I27",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 512,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I27_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I29",
+      "number": "29",
+      "space": "书房茶室",
+      "source": "media/I29/source.jpg",
+      "poster": "media/I29/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I29",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I29_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "I30",
+      "number": "30",
+      "space": "卫生间",
+      "source": "media/I30/source.jpg",
+      "poster": "media/I30/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "I30",
+          "resolution": "1K",
+          "width": 768,
+          "height": 1024,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/night-batch-20261106-originals/I30_original.mp4"
+        }
+      }
+    }
+  ]
+}
