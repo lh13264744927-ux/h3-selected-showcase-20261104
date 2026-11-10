@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>五组人物视频 · freshfive17</title>
+<style>
+:root{color-scheme:dark;--bg:#0e1219;--card:#171f2b;--line:#334055;--txt:#edf2f8;--muted:#aab7c8;--blue:#8ebdff;--gold:#ffda87}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.45 system-ui,"Microsoft Yahei",sans-serif}
+header,.bar,.heading{display:flex;align-items:center;gap:10px;flex-wrap:wrap}header{padding:14px 20px;border-bottom:1px solid var(--line)}
+header strong{font-size:20px}small,#meta,#position,#status{color:var(--muted)}.grow{flex:1}
+button,select{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:#202d40;color:inherit;cursor:pointer}
+button:focus-visible,select:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+button:hover,button.active,button[aria-pressed=true]{border-color:var(--blue);background:#2d4260}
+button.marked{color:var(--gold);border-color:#a97c42}button:disabled{opacity:.38;cursor:default}
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);height:calc(100dvh - 72px)}
+aside{overflow:auto;padding:10px;border-right:1px solid var(--line)}
+.pick{display:flex;align-items:center;gap:9px;width:100%;text-align:left;margin-bottom:7px;padding:6px;background:var(--card)}
+.pick img{width:68px;height:45px;object-fit:cover;border-radius:4px}.pick b{color:var(--gold)}
+main{padding:16px 21px;overflow:auto;min-width:0}.heading h1{font-size:23px;margin:0;flex:1}.bar{margin:11px 0}
+.stage{min-height:240px;border-radius:10px;overflow:hidden;background:#07090e;border:1px solid var(--line);display:grid;align-items:center}
+.stage.paired{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+figure{margin:0;min-width:0}figcaption{padding:8px 12px;color:var(--muted);font-size:14px}
+video,#source{display:block;width:100%;max-height:calc(100dvh - 235px);object-fit:contain;background:#07090e}
+.stage:fullscreen{align-content:center;gap:8px} .stage:fullscreen video,.stage:fullscreen img{max-height:92dvh}
+#status{margin-top:6px;font-size:14px}#empty{padding:45px;text-align:center;color:var(--muted)}
+[hidden]{display:none!important}
+@media(max-width:850px){.layout{display:block;height:auto}aside{display:flex;height:88px;border-right:0;border-bottom:1px solid var(--line)}.pick{min-width:149px;margin:0 6px 0 0}main,header{padding:12px}video,#source{max-height:65dvh}}
+@media(max-width:540px){.stage.paired{grid-template-columns:1fr}.stage.paired video{max-height:34dvh}}
+</style>
+</head>
+<body>
+<header>
+  <strong>五组人物视频</strong><small id="count"></small>
+  <span class="grow"></span>
+  <select id="filter" hidden aria-label="画质筛选"><option value="all">全部场景</option><option value="2K">有 2K 对照</option></select>
+  <button id="only" aria-pressed="false">只看已标记</button><button id="export">导出标记</button>
+</header>
+<div class="layout">
+<aside id="list" aria-label="视频列表"></aside>
+<main>
+<section id="viewer">
+  <div class="heading"><h1 id="title"></h1><button id="mark" aria-pressed="false">☆ 标记</button></div>
+  <div id="meta"></div>
+  <div class="bar">
+    <button id="prev">← 上一组</button><small id="position"></small><button id="next">下一组 →</button>
+    <span class="grow"></span>
+    <button id="one" hidden>1K</button><button id="two" hidden>2K</button><button id="pair" hidden>并排</button><button id="original">原图</button>
+    <button id="sync" hidden>同步播放</button><button id="full">放大</button>
+  </div>
+  <div id="stage" class="stage">
+    <figure id="figureA"><figcaption id="captionA"></figcaption><video id="a" controls loop playsinline preload="metadata"></video></figure>
+    <figure id="figureB" hidden><figcaption id="captionB"></figcaption><video id="b" controls muted loop playsinline preload="metadata"></video></figure>
+    <img id="source" alt="输入原图" hidden>
+  </div>
+  <div id="status" aria-live="polite"></div>
+</section>
+<div id="empty" hidden>当前筛选下没有视频</div>
+</main>
+</div>
+<script id="items-data" type="application/json">{"counts": {"one_k": 5, "two_k": 0}, "items": [{"id": "N01", "number": "01", "space": "客餐厅", "source": "media/N01/source.jpg", "poster": "media/N01/poster.jpg", "variants": {"1K": {"id": "N01", "resolution": "1K", "width": 1024, "height": 576, "duration": 5.166666666666667, "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N01_original.mp4"}}}, {"id": "N02", "number": "02", "space": "客餐厅", "source": "media/N02/source.jpg", "poster": "media/N02/poster.jpg", "variants": {"1K": {"id": "N02", "resolution": "1K", "width": 1024, "height": 576, "duration": 5.166666666666667, "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N02_original.mp4"}}}, {"id": "N03", "number": "03", "space": "客餐厅", "source": "media/N03/source.jpg", "poster": "media/N03/poster.jpg", "variants": {"1K": {"id": "N03", "resolution": "1K", "width": 1024, "height": 512, "duration": 5.166666666666667, "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N03_original.mp4"}}}, {"id": "N04", "number": "04", "space": "卧室", "source": "media/N04/source.jpg", "poster": "media/N04/poster.jpg", "variants": {"1K": {"id": "N04", "resolution": "1K", "width": 1024, "height": 768, "duration": 5.166666666666667, "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N04_original.mp4"}}}, {"id": "N05", "number": "05", "space": "卧室", "source": "media/N05/source.jpg", "poster": "media/N05/poster.jpg", "variants": {"1K": {"id": "N05", "resolution": "1K", "width": 1024, "height": 768, "duration": 5.166666666666667, "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N05_original.mp4"}}}]}</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('items-data').textContent);
+const $=id=>document.getElementById(id), byId=new Map(data.items.map(x=>[x.id,x]));
+const key='h3-freshfive17-marks-20261110';
+let marks=new Set(), only=false, current=byId.has(location.hash.slice(1))?location.hash.slice(1):data.items[0].id, mode='1K';
+try{marks=new Set(JSON.parse(localStorage.getItem(key)||'[]').filter(x=>byId.has(x)));}catch(e){}
+$('count').textContent=`${data.counts.one_k} 组 · 1K`;
+function rows(){return data.items.filter(x=>(!only||marks.has(x.id))&&($('filter').value!=='2K'||x.variants['2K']));}
+function info(v){return `${v.resolution} · ${v.width}×${v.height} · ${v.duration.toFixed(2)} 秒`;}
+function select(id){current=id;$('status').textContent='';render();document.querySelector('.pick.active')?.scrollIntoView({block:'nearest',inline:'nearest'});}
+function setVideo(video,item,variant){
+ if(video.dataset.variant===variant.id)return;
+ video.pause();video.dataset.variant=variant.id;video.src=variant.video;video.poster=item.poster;video.load();
+}
+function render(){
+ const list=rows();
+ if(!list.some(x=>x.id===current))current=list[0]?.id||null;
+ $('list').replaceChildren();$('only').setAttribute('aria-pressed',String(only));$('only').textContent=`只看已标记 ${marks.size}`;
+ for(const x of list){
+   const btn=document.createElement('button'),img=document.createElement('img'),label=document.createElement('span');
+   btn.className='pick'+(x.id===current?' active':'');img.src=x.poster;img.loading='lazy';img.alt='';
+   label.textContent=x.number+' '+x.space+(x.variants['2K']?' · 2K':'');
+   if(marks.has(x.id)){const star=document.createElement('b');star.textContent=' ★';label.append(star);}
+   btn.append(img,label);btn.onclick=()=>select(x.id);$('list').append(btn);
+ }
+ $('viewer').hidden=!current;$('empty').hidden=!!current;
+ if(!current){$('a').pause();$('b').pause();return;}
+ const x=byId.get(current),at=list.findIndex(y=>y.id===current),has2=!!x.variants['2K'];
+ if(!has2&&(mode==='2K'||mode==='pair'))mode='1K';
+ $('title').textContent=x.number+' · '+x.space;$('meta').textContent=mode==='source'?'输入原图':mode==='pair'?'同图画质对照':info(x.variants[mode]);
+ $('position').textContent=`${at+1} / ${list.length}`;$('prev').disabled=at<=0;$('next').disabled=at>=list.length-1;
+ const marked=marks.has(x.id);$('mark').setAttribute('aria-pressed',String(marked));$('mark').classList.toggle('marked',marked);$('mark').textContent=marked?'✓ 已标记':'☆ 标记';
+ $('two').disabled=!has2;$('pair').disabled=!has2;
+ for(const [id,value] of [['one','1K'],['two','2K'],['pair','pair'],['original','source']])$(id).classList.toggle('active',mode===value);
+ $('source').hidden=mode!=='source';$('figureA').hidden=mode==='source';$('figureB').hidden=mode!=='pair';
+ $('stage').classList.toggle('paired',mode==='pair');$('sync').hidden=mode!=='pair';
+ if(mode==='source'){
+   $('a').pause();$('b').pause();$('source').src=x.source;
+ }else{
+   const v=x.variants[mode==='pair'?'1K':mode];
+   setVideo($('a'),x,v);$('captionA').hidden=mode!=='pair';$('captionA').textContent=info(v);
+   if(mode==='pair'){setVideo($('b'),x,x.variants['2K']);$('captionB').textContent=info(x.variants['2K']);}
+   else $('b').pause();
+ }
+ if(location.hash!=='#'+current)history.replaceState(null,'','#'+current);
+}
+function step(delta){const list=rows(),i=list.findIndex(x=>x.id===current);if(list[i+delta])select(list[i+delta].id);}
+for(const [id,value] of [['one','1K'],['two','2K'],['pair','pair'],['original','source']])$(id).onclick=()=>{mode=value;render();};
+$('prev').onclick=()=>step(-1);$('next').onclick=()=>step(1);$('filter').onchange=()=>{if($('filter').value==='2K')mode='pair';render();};
+$('only').onclick=()=>{only=!only;render();};
+$('mark').onclick=()=>{
+ if(!current)return;marks.has(current)?marks.delete(current):marks.add(current);
+ try{localStorage.setItem(key,JSON.stringify([...marks].sort()));$('status').textContent='标记已保存在本浏览器';}catch(e){$('status').textContent='可导出本次标记';}
+ render();
+};
+$('export').onclick=()=>{
+ const payload={board:'H3_freshfive17',ids:[...marks].sort()};
+ const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}));
+ const link=document.createElement('a');link.href=url;link.download='H3五组人物视频标记.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+$('sync').onclick=async()=>{
+ const a=$('a'),b=$('b');
+ if(!a.paused||!b.paused){a.pause();b.pause();return;}
+ a.currentTime=0;b.currentTime=0;
+ try{await Promise.all([a.play(),b.play()]);}catch(e){a.pause();b.pause();$('status').textContent='视频正在加载，请再点一次同步播放。';}
+};
+for(const v of [$('a'),$('b')]){
+ v.onplay=()=>{$('sync').textContent='暂停对照';};
+ v.onpause=()=>{if($('a').paused&&$('b').paused)$('sync').textContent='同步播放';};
+}
+$('full').onclick=()=>{const el=mode==='pair'?$('stage'):mode==='source'?$('source'):$('a');(el.requestFullscreen?.()??Promise.resolve()).catch(()=>{});};
+window.addEventListener('hashchange',()=>{if(byId.has(location.hash.slice(1)))select(location.hash.slice(1));});
+document.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA','SELECT','VIDEO','BUTTON'].includes(e.target.tagName))return;if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1);});
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+  "counts": {
+    "one_k": 5,
+    "two_k": 0
+  },
+  "items": [
+    {
+      "id": "N01",
+      "number": "01",
+      "space": "客餐厅",
+      "source": "media/N01/source.jpg",
+      "poster": "media/N01/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "N01",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 576,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N01_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "N02",
+      "number": "02",
+      "space": "客餐厅",
+      "source": "media/N02/source.jpg",
+      "poster": "media/N02/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "N02",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 576,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N02_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "N03",
+      "number": "03",
+      "space": "客餐厅",
+      "source": "media/N03/source.jpg",
+      "poster": "media/N03/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "N03",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 512,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N03_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "N04",
+      "number": "04",
+      "space": "卧室",
+      "source": "media/N04/source.jpg",
+      "poster": "media/N04/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "N04",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N04_original.mp4"
+        }
+      }
+    },
+    {
+      "id": "N05",
+      "number": "05",
+      "space": "卧室",
+      "source": "media/N05/source.jpg",
+      "poster": "media/N05/poster.jpg",
+      "variants": {
+        "1K": {
+          "id": "N05",
+          "resolution": "1K",
+          "width": 1024,
+          "height": 768,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/freshfive17-originals-20261110/N05_original.mp4"
+        }
+      }
+    }
+  ]
+}
