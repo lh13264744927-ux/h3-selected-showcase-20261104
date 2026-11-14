@@ -1,0 +1,653 @@
+{
+  "counts": {
+    "one_k": 0,
+    "two_k": 43
+  },
+  "items": [
+    {
+      "id": "T001",
+      "number": "01",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T001",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1696,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T001_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T002",
+      "number": "02",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T002",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1696,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T002_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T003",
+      "number": "03",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T003",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1920,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T003_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T005",
+      "number": "05",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T005",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1280,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T005_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T006",
+      "number": "06",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T006",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1312,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T006_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T007",
+      "number": "07",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T007",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1312,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T007_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T008",
+      "number": "08",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T008",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1344,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T008_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T009",
+      "number": "09",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T009",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1248,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T009_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T010",
+      "number": "10",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T010",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1248,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T010_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T011",
+      "number": "11",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T011",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1248,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T011_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T012",
+      "number": "12",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T012",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1248,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T012_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T013",
+      "number": "13",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T013",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1056,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T013_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T014",
+      "number": "14",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T014",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1056,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T014_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T015",
+      "number": "15",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T015",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1216,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T015_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T016",
+      "number": "16",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T016",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1248,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T016_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T017",
+      "number": "17",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T017",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1920,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T017_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T018",
+      "number": "18",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T018",
+          "resolution": "2K",
+          "width": 1920,
+          "height": 2560,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T018_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T019",
+      "number": "19",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T019",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1408,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T019_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T020",
+      "number": "20",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T020",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1312,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T020_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T021",
+      "number": "21",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T021",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T021_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T022",
+      "number": "22",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T022",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1920,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T022_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T023",
+      "number": "23",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T023",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1344,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T023_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T024",
+      "number": "24",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T024",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1664,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T024_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T026",
+      "number": "26",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T026",
+          "resolution": "2K",
+          "width": 1920,
+          "height": 2560,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T026_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T027",
+      "number": "27",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T027",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 2048,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T027_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T028",
+      "number": "28",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T028",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T028_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T029",
+      "number": "29",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T029",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T029_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T030",
+      "number": "30",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T030",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T030_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T032",
+      "number": "32",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T032",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T032_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T033",
+      "number": "33",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T033",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T033_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T034",
+      "number": "34",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T034",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T034_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T035",
+      "number": "35",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T035",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T035_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T036",
+      "number": "36",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T036",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T036_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T037",
+      "number": "37",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T037",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T037_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T038",
+      "number": "38",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T038",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T038_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T039",
+      "number": "39",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T039",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T039_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T040",
+      "number": "40",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T040",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T040_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T041",
+      "number": "41",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T041",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T041_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T042",
+      "number": "42",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T042",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T042_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T043",
+      "number": "43",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T043",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T043_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T044",
+      "number": "44",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T044",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T044_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T045",
+      "number": "45",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T045",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T045_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T081",
+      "number": "81",
+      "space": "书房茶室",
+      "variants": {
+        "2K": {
+          "id": "T081",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1280,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T081_2K.mp4"
+        }
+      }
+    }
+  ]
+}
