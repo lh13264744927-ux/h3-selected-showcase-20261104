@@ -1,7 +1,7 @@
 {
   "counts": {
     "one_k": 0,
-    "two_k": 43
+    "two_k": 44
   },
   "items": [
     {
@@ -631,6 +631,21 @@
           "height": 1440,
           "duration": 5.166666666666667,
           "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T045_2K.mp4"
+        }
+      }
+    },
+    {
+      "id": "T046",
+      "number": "46",
+      "space": "客餐厅",
+      "variants": {
+        "2K": {
+          "id": "T046",
+          "resolution": "2K",
+          "width": 2560,
+          "height": 1440,
+          "duration": 5.166666666666667,
+          "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/final2k-full100-videos-20261114/T046_2K.mp4"
         }
       }
     },
