@@ -1,0 +1,10 @@
+{
+  "batch": "1125-test100-20261125",
+  "updated": "2026-11-25T21:59:53.775337+08:00",
+  "deadline": "2026-11-26T10:00:00+08:00",
+  "status": "running",
+  "total": 100,
+  "completed": 0,
+  "failed": 0,
+  "items": []
+}

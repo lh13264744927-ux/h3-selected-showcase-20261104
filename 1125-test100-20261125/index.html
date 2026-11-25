@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1125 · 测试集视频</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui,-apple-system,"Microsoft YaHei",sans-serif;background:#101820;color:#eaf1f7}*{box-sizing:border-box}body{margin:0}header{padding:18px 24px;border-bottom:1px solid #304252}h1{font-size:22px;margin:0 0 8px}small{color:#aabac8}header button{float:right}button{background:#203345;color:#eaf1f7;border:1px solid #3c5367;border-radius:7px;padding:8px 12px;cursor:pointer}button:hover,button.active{background:#27597e;border-color:#64bdff}.layout{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:20px;max-width:1700px;margin:auto}nav{max-height:80vh;overflow:auto;display:flex;flex-direction:column;gap:6px}nav button{text-align:left}main{min-width:0}h2{margin:0 0 10px;font-size:20px}video{display:block;width:100%;height:auto;max-height:73vh;background:#05090d;border-radius:9px}p{line-height:1.6;margin:10px 0;color:#c0cfdb}.tools{display:flex;gap:8px;flex-wrap:wrap}.marked{color:#ffc770}#empty{padding:60px 20px;text-align:center}a{color:#8dd0ff}@media(max-width:750px){header{padding:15px}.layout{display:flex;flex-direction:column;padding:12px;gap:14px}nav{display:grid;grid-template-columns:repeat(3,1fr);max-height:180px}nav button{font-size:13px;padding:7px}video{max-height:65vh}h1{font-size:19px}}
+</style>
+<header><button id="refresh">刷新结果</button><h1>1125 · 测试集视频</h1><small id="summary"></small></header>
+<div class="layout"><nav id="list"></nav><main>
+<div id="empty">正在生成，完成的视频会陆续更新。</div>
+<section id="viewer" hidden><h2 id="title"></h2>
+<video id="video" controls playsinline loop preload="metadata"></video>
+<p id="info"></p><p id="times"></p>
+<div class="tools"><button id="mark">标记此组</button><button id="export">导出标记</button><button id="sound">开启声音</button><button id="prev">上一组</button><button id="next">下一组</button></div>
+</section></main></div>
+<script>
+let data={"batch": "1125-test100-20261125", "updated": "2026-11-25T21:59:53.775337+08:00", "deadline": "2026-11-26T10:00:00+08:00", "status": "running", "total": 100, "completed": 0, "failed": 0, "items": []};
+const $=id=>document.getElementById(id),key="h3-1125-test100-20261125-marks";
+let marks=new Set(JSON.parse(localStorage.getItem(key)||"[]")),selected=null;
+const duration=s=>{s=Math.round(Number(s)||0);return s>=60?`${Math.floor(s/60)}分${s%60}秒`:`${s}秒`};
+function render(){let done=data.completed||0;$("summary").textContent=`已生成 ${done} / ${data.total} 组 · 失败 ${data.failed||0} 组 · 更新 ${data.updated.slice(0,19).replace("T"," ")} · 已出片结果，效果待筛选`;
+$("list").replaceChildren();data.items.forEach(row=>{let b=document.createElement("button");b.textContent=`${marks.has(row.id)?"★ ":""}${row.number} · ${row.space}`;b.className=(row.id===selected?"active ":"")+(marks.has(row.id)?"marked":"");b.onclick=()=>show(row.id);$("list").append(b)});
+if(!done){$("viewer").hidden=true;$("empty").hidden=false;return}
+$("viewer").hidden=false;$("empty").hidden=true;
+if(!data.items.some(row=>row.id===selected))show(decodeURIComponent(location.hash.slice(1))||data.items[0].id)}
+function show(id){let row=data.items.find(row=>row.id===id)||data.items[0];if(!row)return;selected=row.id;history.replaceState(null,"","#"+row.id);$("title").textContent=`${row.number} · ${row.space}`;$("video").src=row.video;$("video").muted=true;$("sound").textContent="开启声音";$("info").textContent=`${row.width} × ${row.height} · ${row.fps} fps · ${row.duration.toFixed(2)} 秒`;$("times").textContent=`Dify：${duration(row.dify_seconds)} · 视频：${duration(row.video_seconds)} · 两阶段执行：${duration((row.dify_seconds||0)+(row.video_seconds||0))}`;$("mark").textContent=marks.has(row.id)?"取消标记":"标记此组";render()}
+$("mark").onclick=()=>{if(!selected)return;marks.has(selected)?marks.delete(selected):marks.add(selected);localStorage.setItem(key,JSON.stringify([...marks]));$("mark").textContent=marks.has(selected)?"取消标记":"标记此组";render()};
+$("export").onclick=()=>{let value={board:data.batch,exported_at:new Date().toISOString(),marked:[...marks].sort()};let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:"application/json"}));a.download="1125测试集标记.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+$("sound").onclick=()=>{$("video").muted=!$("video").muted;$("sound").textContent=$("video").muted?"开启声音":"关闭声音"};
+function move(n){let i=data.items.findIndex(row=>row.id===selected);if(data.items.length)show(data.items[(i+n+data.items.length)%data.items.length].id)}
+$("prev").onclick=()=>move(-1);$("next").onclick=()=>move(1);
+$("refresh").onclick=async()=>{try{let r=await fetch("data.json?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error();data=await r.json();render()}catch(e){location.reload()}};
+render();
+</script>
+</html>
