@@ -1,10 +1,23 @@
 {
   "batch": "1125-test100-20261125",
-  "updated": "2026-11-25T21:59:53.775337+08:00",
+  "updated": "2026-11-25T22:02:58.008154+08:00",
   "deadline": "2026-11-26T10:00:00+08:00",
   "status": "running",
   "total": 100,
-  "completed": 0,
+  "completed": 1,
   "failed": 0,
-  "items": []
+  "items": [
+    {
+      "id": "T003",
+      "number": "03",
+      "space": "客餐厅",
+      "width": 2160,
+      "height": 1620,
+      "fps": 24.0,
+      "duration": 5.166666666666667,
+      "dify_seconds": 152.370368,
+      "video_seconds": 475.767,
+      "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T003.mp4"
+    }
+  ]
 }
