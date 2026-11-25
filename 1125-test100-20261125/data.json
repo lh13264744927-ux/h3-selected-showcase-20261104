@@ -1,11 +1,11 @@
 {
   "batch": "1125-test100-20261125",
-  "updated": "2026-11-25T22:19:11.090537+08:00",
+  "updated": "2026-11-25T22:33:08.434500+08:00",
   "deadline": "2026-11-26T10:00:00+08:00",
   "status": "running",
   "total": 100,
-  "completed": 4,
-  "failed": 4,
+  "completed": 9,
+  "failed": 6,
   "items": [
     {
       "id": "T003",
@@ -54,6 +54,66 @@
       "dify_seconds": 114.181204,
       "video_seconds": 435.989,
       "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T007.mp4"
+    },
+    {
+      "id": "T008",
+      "number": "08",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1316,
+      "fps": 24.0,
+      "duration": 5.166666666666667,
+      "dify_seconds": 154.953261,
+      "video_seconds": 402.522,
+      "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T008.mp4"
+    },
+    {
+      "id": "T009",
+      "number": "09",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1238,
+      "fps": 24.0,
+      "duration": 5.166666666666667,
+      "dify_seconds": 145.720325,
+      "video_seconds": 407.67,
+      "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T009.mp4"
+    },
+    {
+      "id": "T010",
+      "number": "10",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1246,
+      "fps": 24.0,
+      "duration": 5.166666666666667,
+      "dify_seconds": 119.720235,
+      "video_seconds": 362.741,
+      "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T010.mp4"
+    },
+    {
+      "id": "T013",
+      "number": "13",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1036,
+      "fps": 24.0,
+      "duration": 5.166666666666667,
+      "dify_seconds": 153.767608,
+      "video_seconds": 317.686,
+      "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T013.mp4"
+    },
+    {
+      "id": "T014",
+      "number": "14",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1036,
+      "fps": 24.0,
+      "duration": 5.166666666666667,
+      "dify_seconds": 140.813593,
+      "video_seconds": 283.985,
+      "video": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T014.mp4"
     }
   ]
 }
