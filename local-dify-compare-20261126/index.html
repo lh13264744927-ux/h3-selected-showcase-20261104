@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>本地正文与Dify正文对照</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui,"Microsoft YaHei";background:#101820;color:#eaf1f7}body{margin:0;padding:20px}header{display:flex;gap:16px;align-items:center;flex-wrap:wrap}h1{font-size:22px}button{padding:9px 14px;border:1px solid #49647b;border-radius:7px;background:#203345;color:inherit;cursor:pointer}.layout{display:grid;grid-template-columns:170px 1fr;gap:20px}nav{display:flex;flex-direction:column;gap:7px}main{min-width:0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:15px}video{width:100%;max-height:72vh;background:#000;border-radius:8px}h2{font-size:19px}h3{font-size:16px}p{color:#b4c5d4}.active{border-color:#78caff}@media(max-width:800px){.layout{display:block}nav{flex-direction:row;flex-wrap:wrap}.pair{grid-template-columns:1fr}body{padding:12px}}
+</style>
+<header><h1>本地正文 / Dify正文</h1><span id="summary"></span><button id="play">同步播放</button><button id="pause">暂停</button></header>
+<div class="layout"><nav id="nav"></nav><main><h2 id="title"></h2><p id="info"></p><div class="pair">
+<section><h3>本地历史实跑正文</h3><video id="local" controls playsinline muted preload="metadata"></video><p id="localtime"></p></section>
+<section><h3>Dify正文</h3><video id="dify" controls playsinline muted preload="metadata"></video><p id="difytime"></p></section>
+</div></main></div>
+<script>
+const data={"updated": "2026-11-26T09:31:57.083790+08:00", "completed": 1, "items": [{"id": "T010", "space": "客餐厅", "width": 2496, "height": 1246, "fps": 24, "local_seconds": 360.326, "dify_seconds": 362.741, "local": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T010_local.mp4", "dify": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T010.mp4"}]},$=id=>document.getElementById(id);
+function show(row){location.hash=row.id;$("title").textContent=`${row.id.slice(1)} · ${row.space}`;$("info").textContent=`${row.width} × ${row.height} · 24 fps · 同图、同seed、同生成参数`;$("local").src=row.local;$("dify").src=row.dify;$("localtime").textContent=`视频生成：${Math.round(row.local_seconds)}秒`;$("difytime").textContent=`视频生成：${Math.round(row.dify_seconds)}秒`;document.querySelectorAll("nav button").forEach(b=>b.className=b.dataset.id===row.id?"active":"")}
+$("summary").textContent=`${data.completed}组`;
+data.items.forEach(row=>{const b=document.createElement("button");b.textContent=`${row.id.slice(1)} · ${row.space}`;b.dataset.id=row.id;b.onclick=()=>show(row);$("nav").append(b)});
+$("play").onclick=()=>{for(const id of ["local","dify"]){$(id).currentTime=0;$(id).play().catch(()=>{})}};
+$("pause").onclick=()=>["local","dify"].forEach(id=>$(id).pause());
+show(data.items.find(r=>r.id===location.hash.slice(1))||data.items[0]);
+</script></html>

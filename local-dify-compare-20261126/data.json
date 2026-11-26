@@ -1,0 +1,17 @@
+{
+  "updated": "2026-11-26T09:31:57.083790+08:00",
+  "completed": 1,
+  "items": [
+    {
+      "id": "T010",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1246,
+      "fps": 24,
+      "local_seconds": 360.326,
+      "dify_seconds": 362.741,
+      "local": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T010_local.mp4",
+      "dify": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T010.mp4"
+    }
+  ]
+}
