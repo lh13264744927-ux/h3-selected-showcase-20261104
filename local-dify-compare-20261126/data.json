@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-26T11:06:37.245760+08:00",
-  "completed": 9,
+  "updated": "2026-11-26T11:08:19.828109+08:00",
+  "completed": 12,
   "items": [
     {
       "id": "T010",
@@ -490,8 +490,185 @@
       },
       "local": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T092_local.mp4",
       "dify": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T092.mp4"
+    },
+    {
+      "id": "T016",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1246,
+      "fps": 24,
+      "local_seconds": 361.382,
+      "dify_seconds": 395.576,
+      "historical": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T016_historical.mp4",
+      "historical_width": 2560,
+      "historical_height": 1248,
+      "historical_fps": 24.0,
+      "historical_seconds": 1341.72,
+      "historical_same_seed": false,
+      "historical_same_generation_configuration": false,
+      "original_prompt_sections": {
+        "historical": {
+          "plants": [
+            "the observed flexible foliage of the existing Fiddle leaf fig potted plant in the left part of the reference: The plant starts at rest. Only a few existing flexible leaves move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement."
+          ],
+          "lighting": [
+            "Use the original reference image as the color and lighting baseline from the first frame to the last. Preserve its overall color tone, white balance, color temperature, saturation, overall contrast, and original material colors. Keep overall exposure and ambient fill light at their reference levels. Only source-bound local lighting changes specified for this shot may slightly vary brightness, within their original receiving areas. Keep all other surfaces at their reference brightness and color. As the camera moves, the light pattern may shift in the image through natural perspective; keep its original light color and physical receiving area in the room. Keep lighting changes smooth and continuous, without flicker, pulsing, or sudden exposure shifts.",
+            "Use the original illumination; limit any slight brightness variation to an existing local soft shadow or reflection."
+          ],
+          "camera": [
+            "A very slow, restrained forward dolly. The camera advances only slightly across the complete shot; the final framing is just a little tighter than the first frame. The motion starts at the beginning and remains even throughout this 5.17-second architectural shot, with the same pace in the first and second halves. Do not accelerate, rush toward the subject, or hold still before making a late move. Preserve coherent room perspective, rigid geometry, materials and occlusion as the camera travels; no digital zoom, flat-image sliding, sudden pan or rocking. Keep focal length and camera height constant."
+          ]
+        },
+        "local": {
+          "plants": [
+            "the observed flexible foliage of the existing Fiddle leaf fig potted plant in the left part of the reference: The plant starts at rest. Only a few existing flexible leaves move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement."
+          ],
+          "lighting": [
+            "Use the original reference image as the color and lighting baseline from the first frame to the last. Preserve its overall color tone, white balance, color temperature, saturation, overall contrast, and original material colors. Keep overall exposure and ambient fill light at their reference levels. Only source-bound local lighting changes specified for this shot may slightly vary brightness, within their original receiving areas. Keep all other surfaces at their reference brightness and color. As the camera moves, the light pattern may shift in the image through natural perspective; keep its original light color and physical receiving area in the room. Keep lighting changes smooth and continuous, without flicker, pulsing, or sudden exposure shifts.",
+            "Use the original illumination; limit any slight brightness variation to an existing local soft shadow or reflection."
+          ],
+          "camera": [
+            "A very slow, restrained forward dolly. The camera advances only slightly across the complete shot; the final framing is just a little tighter than the first frame. The motion starts at the beginning and remains even throughout this 5.17-second architectural shot, with the same pace in the first and second halves. Do not accelerate, rush toward the subject, or hold still before making a late move. Preserve coherent room perspective, rigid geometry, materials and occlusion as the camera travels; no digital zoom, flat-image sliding, sudden pan or rocking. Keep focal length and camera height constant."
+          ]
+        },
+        "dify": {
+          "plants": [
+            "Tall leafy potted plant beside the left sofa: Starting at rest, only a few tips and edges of the observed leaves sway twice in one brief gentle breeze: a small visible first sway, then a softer second. Neighboring flexible parts move slightly out of sync and settle, staying still through the final quarter. Keep the original container and fixed stem bases, the original rigid container where present, and the main fixed supports steady; only the identified flexible parts move. Do not rock the whole plant or restart after settling. Any existing reflection and cast shadow remain coherent with the same small motion."
+          ],
+          "lighting": [
+            "The same original daylight from Natural light from rear window makes a visible but restrained, short, smooth displacement within these original local receiving areas: Glossy floor tiles and rug surface in the central aisle (Central floor area extending from window towards camera); Top surface of the floating TV cabinet (Upper horizontal plane of the right-side cabinet). Use one continuous, synchronized timing, independently of camera motion, with natural projections on each surface rather than identical directions or distances. Preserve its intensity, color, softness, approximate extent and coherent occlusion and cast shadows; keep the receivers and material textures rigid. Leave the slight offset without returning, sweeping across the room or changing overall exposure.",
+            "Keep the reference lighting within Ceiling cove areas on Ceiling perimeter and upper wall sections in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference lighting within Strip of floor directly under the right cabinet on Floor area beneath the floating TV cabinet in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference exposure, white balance, color temperature, overall contrast, ambient fill and material base colors constant from the first frame to the last. Only the selected source-bound local changes may vary their original receiving areas; do not brighten, dim, recolor, pulse or flicker the whole room. Preserve original light color and physical receiving surfaces as their projections change naturally. All unrelated objects and lighting retain their reference state. Maintain one continuous shot through the end."
+          ],
+          "camera": [
+            "Make a very slow, restrained forward dolly along one straight horizontal path following the starting viewing direction. Keep the initial yaw, pitch, roll, camera height and focal length. Begin at the opening, move evenly through the shot and reach a slightly tighter framing at the last frame through real perspective. Use Central seating arrangement and rear window as the rigid framing reference, without recentering or freezing its screen position. Do not delay, accelerate to catch up, finish early, reverse or use digital zoom."
+          ]
+        }
+      },
+      "local": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T016_local.mp4",
+      "dify": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T016.mp4"
+    },
+    {
+      "id": "T020",
+      "space": "客餐厅",
+      "width": 2496,
+      "height": 1308,
+      "fps": 24,
+      "local_seconds": 397.724,
+      "dify_seconds": 395.829,
+      "historical": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T020_historical.mp4",
+      "historical_width": 2560,
+      "historical_height": 1312,
+      "historical_fps": 24.0,
+      "historical_seconds": 1642.037,
+      "historical_same_seed": false,
+      "historical_same_generation_configuration": false,
+      "original_prompt_sections": {
+        "historical": {
+          "plants": [
+            "the observed flexible foliage of the existing yellow flowering branch in the left part of the reference: The plant starts at rest. Only a few observed flexible plant parts move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement."
+          ],
+          "lighting": [
+            "Use the original reference image as the color and lighting baseline from the first frame to the last. Preserve its overall color tone, white balance, color temperature, saturation, overall contrast, and original material colors. Keep overall exposure and ambient fill light at their reference levels. Only source-bound local lighting changes specified for this shot may slightly vary brightness, within their original receiving areas. Keep all other surfaces at their reference brightness and color. As the camera moves, the light pattern may shift in the image through natural perspective; keep its original light color and physical receiving area in the room. Keep lighting changes smooth and continuous, without flicker, pulsing, or sudden exposure shifts.",
+            "Use the original illumination; limit any slight brightness variation to an existing local soft shadow or reflection."
+          ],
+          "camera": [
+            "A very slow, restrained forward dolly. The camera advances only slightly across the complete shot; the final framing is just a little tighter than the first frame. The motion starts at the beginning and remains even throughout this 5.17-second architectural shot, with the same pace in the first and second halves. Do not accelerate, rush toward the subject, or hold still before making a late move. Preserve coherent room perspective, rigid geometry, materials and occlusion as the camera travels; no digital zoom, flat-image sliding, sudden pan or rocking. Keep focal length and camera height constant."
+          ]
+        },
+        "local": {
+          "plants": [
+            "the observed flexible foliage of the existing yellow flowering branch in the left part of the reference: The plant starts at rest. Only a few observed flexible plant parts move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement."
+          ],
+          "lighting": [
+            "Use the original reference image as the color and lighting baseline from the first frame to the last. Preserve its overall color tone, white balance, color temperature, saturation, overall contrast, and original material colors. Keep overall exposure and ambient fill light at their reference levels. Only source-bound local lighting changes specified for this shot may slightly vary brightness, within their original receiving areas. Keep all other surfaces at their reference brightness and color. As the camera moves, the light pattern may shift in the image through natural perspective; keep its original light color and physical receiving area in the room. Keep lighting changes smooth and continuous, without flicker, pulsing, or sudden exposure shifts.",
+            "Use the original illumination; limit any slight brightness variation to an existing local soft shadow or reflection."
+          ],
+          "camera": [
+            "A very slow, restrained forward dolly. The camera advances only slightly across the complete shot; the final framing is just a little tighter than the first frame. The motion starts at the beginning and remains even throughout this 5.17-second architectural shot, with the same pace in the first and second halves. Do not accelerate, rush toward the subject, or hold still before making a late move. Preserve coherent room perspective, rigid geometry, materials and occlusion as the camera travels; no digital zoom, flat-image sliding, sudden pan or rocking. Keep focal length and camera height constant."
+          ]
+        },
+        "dify": {
+          "plants": [
+            "Yellow berry branches in dark vase on left marble island: Starting at rest, only Thin branching stems with small yellow clusters at tips sway twice in one brief gentle breeze: a small visible first sway, then a softer second. Neighboring flexible parts move slightly out of sync and settle, staying still through the final quarter. Keep the original container and fixed stem bases at Marble-topped island cabinet on the left foreground, the original rigid container where present, and the main fixed supports steady; only the identified flexible parts move. Do not rock the whole plant or restart after settling. Any existing reflection and cast shadow remain coherent with the same small motion."
+          ],
+          "lighting": [
+            "The same original daylight from Left window daylight makes a visible but restrained, short, smooth displacement within these original local receiving areas: Floor tiles near left wall (Narrow band along base of left wall); Front face of marble island (Lower left corner of island facade); Left end of dining table surface (Near edge of tabletop adjacent to island). Use one continuous, synchronized timing, independently of camera motion, with natural projections on each surface rather than identical directions or distances. Preserve its intensity, color, softness, approximate extent and coherent occlusion and cast shadows; keep the receivers and material textures rigid. Leave the slight offset without returning, sweeping across the room or changing overall exposure.",
+            "Keep the reference lighting within Local glow under lamp shade on Table surface beneath left lamp in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference lighting within Local glow under lamp shade on Table surface beneath middle lamp in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference lighting within Local glow under lamp shade on Table surface beneath right lamp in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference exposure, white balance, color temperature, overall contrast, ambient fill and material base colors constant from the first frame to the last. Only the selected source-bound local changes may vary their original receiving areas; do not brighten, dim, recolor, pulse or flicker the whole room. Preserve original light color and physical receiving surfaces as their projections change naturally. All unrelated objects and lighting retain their reference state. Maintain one continuous shot through the end."
+          ],
+          "camera": [
+            "Make a very slow, restrained forward dolly along one straight horizontal path following the starting viewing direction. Keep the initial yaw, pitch, roll, camera height and focal length. Begin at the opening, move evenly through the shot and reach a slightly tighter framing at the last frame through real perspective. Use Dining table and chairs centered in frame as the rigid framing reference, without recentering or freezing its screen position. Do not delay, accelerate to catch up, finish early, reverse or use digital zoom."
+          ]
+        }
+      },
+      "local": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T020_local.mp4",
+      "dify": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T020.mp4"
+    },
+    {
+      "id": "T027",
+      "space": "客餐厅",
+      "width": 2090,
+      "height": 1672,
+      "fps": 24,
+      "local_seconds": 434.79,
+      "dify_seconds": 498.737,
+      "historical": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T027_historical.mp4",
+      "historical_width": 2560,
+      "historical_height": 2048,
+      "historical_fps": 24.0,
+      "historical_seconds": 3437.172,
+      "historical_same_seed": false,
+      "historical_same_generation_configuration": false,
+      "original_prompt_sections": {
+        "historical": {
+          "plants": [
+            "the observed flexible plant parts emerging from the existing vase flower arrangement in the lower-right part of the reference (2 of 2 same-type objects ordered from left to right): The plant starts at rest. Only a few observed flexible plant parts move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement.",
+            "the observed flexible foliage of the existing outdoor greenery in the lower-left part of the reference (1 of 2 same-type objects ordered from left to right): The plant starts at rest. Only a few existing flexible leaves move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement."
+          ],
+          "lighting": [
+            "Use the original reference image as the color and lighting baseline from the first frame to the last. Preserve its overall color tone, white balance, color temperature, saturation, overall contrast, and original material colors. Keep overall exposure and ambient fill light at their reference levels. Only source-bound local lighting changes specified for this shot may slightly vary brightness, within their original receiving areas. Keep all other surfaces at their reference brightness and color. As the camera moves, the light pattern may shift in the image through natural perspective; keep its original light color and physical receiving area in the room. Keep lighting changes smooth and continuous, without flicker, pulsing, or sudden exposure shifts.",
+            "Use the original illumination; limit any slight brightness variation to an existing local soft shadow or reflection."
+          ],
+          "camera": [
+            "A very slow, restrained forward dolly. The camera advances only slightly across the complete shot; the final framing is just a little tighter than the first frame. The motion starts at the beginning and remains even throughout this 5.17-second architectural shot, with the same pace in the first and second halves. Do not accelerate, rush toward the subject, or hold still before making a late move. Preserve coherent room perspective, rigid geometry, materials and occlusion as the camera travels; no digital zoom, flat-image sliding, sudden pan or rocking. Keep focal length and camera height constant."
+          ]
+        },
+        "local": {
+          "plants": [
+            "the observed flexible plant parts emerging from the existing vase flower arrangement in the lower-right part of the reference (2 of 2 same-type objects ordered from left to right): The plant starts at rest. Only a few observed flexible plant parts move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement.",
+            "the observed flexible foliage of the existing outdoor greenery in the lower-left part of the reference (1 of 2 same-type objects ordered from left to right): The plant starts at rest. Only a few existing flexible leaves move. A single brief, gentle breeze makes them sway twice: a small but clearly visible first sway, then a softer second sway. They settle naturally and stay still through the final quarter of the shot. Neighboring parts move slightly out of sync, with a subtle visible shift of their edges against the background. Keep the original container, main supports and overall position steady. Do not rock the whole plant or restart the motion after it settles. Any existing mirror reflection follows the same movement."
+          ],
+          "lighting": [
+            "Use the original reference image as the color and lighting baseline from the first frame to the last. Preserve its overall color tone, white balance, color temperature, saturation, overall contrast, and original material colors. Keep overall exposure and ambient fill light at their reference levels. Only source-bound local lighting changes specified for this shot may slightly vary brightness, within their original receiving areas. Keep all other surfaces at their reference brightness and color. As the camera moves, the light pattern may shift in the image through natural perspective; keep its original light color and physical receiving area in the room. Keep lighting changes smooth and continuous, without flicker, pulsing, or sudden exposure shifts.",
+            "Use the original illumination; limit any slight brightness variation to an existing local soft shadow or reflection."
+          ],
+          "camera": [
+            "A very slow, restrained forward dolly. The camera advances only slightly across the complete shot; the final framing is just a little tighter than the first frame. The motion starts at the beginning and remains even throughout this 5.17-second architectural shot, with the same pace in the first and second halves. Do not accelerate, rush toward the subject, or hold still before making a late move. Preserve coherent room perspective, rigid geometry, materials and occlusion as the camera travels; no digital zoom, flat-image sliding, sudden pan or rocking. Keep focal length and camera height constant."
+          ]
+        },
+        "dify": {
+          "plants": [
+            "White floral arrangement in glass vase on right cabinet: Starting at rest, only a few tips and edges of the observed leaves sway twice in one brief gentle breeze: a small visible first sway, then a softer second. Neighboring flexible parts move slightly out of sync and settle, staying still through the final quarter. Keep the original container and fixed stem bases at Wooden cabinet unit against right rear wall, the original rigid container where present, and the main fixed supports steady; only the identified flexible parts move. Do not rock the whole plant or restart after settling. Any existing reflection and cast shadow remain coherent with the same small motion."
+          ],
+          "lighting": [
+            "The same original daylight from Left black-framed window assembly makes a visible but restrained, short, smooth displacement within these original local receiving areas: Rear wall paneling to the left of the artwork (Upper left section of rear wall); Left side of the beige sofa and left cushion (Left armrest and seat area). Use one continuous, synchronized timing, independently of camera motion, with natural projections on each surface rather than identical directions or distances. Preserve its intensity, color, softness, approximate extent and coherent occlusion and cast shadows; keep the receivers and material textures rigid. Leave the slight offset without returning, sweeping across the room or changing overall exposure.",
+            "Keep the reference lighting within Lower left wall area on Wall paneling behind left table lamp in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference lighting within Lower right wall area near sofa on Wall paneling behind right table lamp in its original state. Do not animate that local lighting or introduce a new light patch; preserve the original source and material.",
+            "Keep the reference exposure, white balance, color temperature, overall contrast, ambient fill and material base colors constant from the first frame to the last. Only the selected source-bound local changes may vary their original receiving areas; do not brighten, dim, recolor, pulse or flicker the whole room. Preserve original light color and physical receiving surfaces as their projections change naturally. All unrelated objects and lighting retain their reference state. Maintain one continuous shot through the end."
+          ],
+          "camera": [
+            "Make a very slow, restrained forward dolly along one straight horizontal path following the starting viewing direction. Keep the initial yaw, pitch, roll, camera height and focal length. Begin at the opening, move evenly through the shot and reach a slightly tighter framing at the last frame through real perspective. Use Beige curved sofa and black marble coffee table as the rigid framing reference, without recentering or freezing its screen position. Do not delay, accelerate to catch up, finish early, reverse or use digital zoom."
+          ]
+        }
+      },
+      "local": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/local-dify-compare-20261126-videos/T027_local.mp4",
+      "dify": "https://github.com/lh13264744927-ux/h3-selected-showcase-20261104/releases/download/1125-test100-20261125-videos/T027.mp4"
     }
   ],
-  "history_added": 9,
+  "history_added": 12,
   "historical_videos_regenerated": 0
 }
